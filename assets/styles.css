@@ -1,0 +1,77 @@
+/* style sheet for weather app */
+
+body {
+    font-family: 'Sen', sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+
+p {
+	color: #333333;
+}
+
+.my-h4 {
+    padding-top: 10px;
+}
+
+.click-btn {
+    border: none;
+    background-color: #333333;
+}
+
+.click-btn:hover {
+    border: none;
+    background-color: orangered;
+}
+
+
+.today {
+    margin-top: 20px;
+	border: 1px solid #333333;
+    padding-left: 1rem;
+    background-color: white;
+}
+
+#buttons-view {
+    margin-top: 10px;
+}
+.list-group-item {
+    background-color: #ebebeb;
+}
+
+.list-group-item:hover {
+    background-color: orangered;
+    color: snow;
+}
+
+.card-body {
+	padding: 0.35rem;
+}
+
+.uvGreen {
+	background-color:green;
+	border-radius: 5px;
+}
+
+.uvYellow {
+	background-color:yellow;
+	border-radius: 5px;
+}
+
+.uvRed {
+	background-color: red;
+	border-radius: 5px;
+}
+
+
+img {
+	width: 15%;
+	height: 15%;
+}
+
+.card-text {
+	font-size: 10pt;
+}
+
+.forcast {
+	padding: 1rem;
+}

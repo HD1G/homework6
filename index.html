@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  	<link rel="stylesheet" href="assets\styles.css" />
+		<title>Weather Dashboard</title>
+	</head>
+
+	<body>
+		<header class="container-fluid text-center text-white bg-dark p-2">
+			<h1>Weather Dashboard</h1>
+		  </header>
+				<div class="container">
+			<div class="row">
+				<!-- column holding search form for city -->
+				<div class="col-md-4">
+					<h4 class="my-h4">Search for a City:</h4>
+					<form id="city-form">
+						<input type="text" id="search-value" />
+						<button type="button" id="search-button" class="btn btn-primary click-btn">
+							<i class="fa fa-search icon-btn"></i>
+						</button>
+					</form>
+				<!-- div for city buttons generated on javascript.js -->
+									<div id="buttons-view" class="card" style="width: 15rem;">
+						<ul class="list-group list-group-flush"></ul>
+					</div>
+				</div>
+				<!-- column for todays forecast and 3 day forecast cards -->
+				<div class="col-md-8">
+				<!-- start today's forecast -->
+					<div class="today">
+						<h3 class="city"></h3>
+						<p class="temp"></p>						
+						<p class="humidity"></p>
+						<p class="wind"></p>
+						<p class="uvIndex"></p>
+					</div>
+				<!-- start 3 day -->
+					<div class="forcast">
+						<h4>3-Day Forecast:</h4>
+					</div>
+					<!-- cards for 3 day -->
+					<div class="row">
+						<div class="col-4">
+							<div class="card">
+								<h5 class="card-title dateOne"></h5>
+								<p class="card-text iconOne"></p>
+								<p class="card-text tempOne"></p>
+								<p class="card-text humidityOne"></p>							
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="card">
+								<h5 class="card-title dateTwo"></h5>
+								<p class="card-text iconTwo"></p>
+								<p class="card-text tempTwo"></p>
+								<p class="card-text humidityTwo"></p>							
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="card">
+								<h5 class="card-title dateThree"></h5>
+								<p class="card-text iconThree"></p>
+								<p class="card-text tempThree"></p>
+								<p class="card-text humidity"></p>							
+							</div>
+						</div>
+							</div>
+							
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- links to scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="assets\javascript.js"></script>
+	</body>
+</html>
